@@ -18,4 +18,9 @@ public class PersonController {
                 Person.builder().name("B").age(12).build(),
                 Person.builder().name("C").age(13).build() );
     }
+
+    @GetMapping("/one")
+    public Person getOne() {
+        return Person.builder().name("A").age(11).build();
+    }
 }
